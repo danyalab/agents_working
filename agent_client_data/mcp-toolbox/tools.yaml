@@ -1,0 +1,20 @@
+sources:
+  my-bq-source:
+    kind: bigquery
+    project: wealthaid-2-18d7
+
+tools:
+ search_clients_bq:
+   kind: bigquery-sql
+   source: my-bq-source
+   statement: |
+    SELECT 
+      *
+    FROM 
+      `wealthaid-2-18d7.danya_testing_mcp.client-data-all_copy`
+   description: |
+    Use this tool to get information on clients.
+
+toolsets:
+ my_bq_toolset:
+   - search_clients_bq

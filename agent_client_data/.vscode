@@ -1,0 +1,11 @@
+{
+  "servers": {
+    "bigquery": {
+      "command": "./PATH/TO/toolbox",
+      "args": ["--prebuilt","bigquery","--stdio"],
+      "env": {
+        "BIGQUERY_PROJECT": "wealthaid-2-18d7"
+      }
+    }
+  }
+}
