@@ -1,0 +1,26 @@
+# Secrets / local config
+.env
+.env.*
+!.env.example
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Local virtual environments
+.venv/
+venv/
+env/
+
+# MCP Toolbox binary (download per-platform; don't commit)
+mcp-toolbox/toolbox
+toolbox
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Session dumps and archives
+session-*.json
+*.zip

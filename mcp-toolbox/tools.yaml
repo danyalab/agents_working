@@ -1,0 +1,20 @@
+# MCP Toolbox for Databases — BigQuery toolset.
+# Replace the placeholders below with your own GCP project and table.
+sources:
+  my-bq-source:
+    kind: bigquery
+    project: your-gcp-project-id
+
+tools:
+  search_clients_bq:
+    kind: bigquery-sql
+    source: my-bq-source
+    statement: |
+      SELECT *
+      FROM `your-gcp-project-id.your_dataset.client_data`
+    description: |
+      Use this tool to get information on clients (portfolios, holdings, identifiers).
+
+toolsets:
+  my_bq_toolset:
+    - search_clients_bq

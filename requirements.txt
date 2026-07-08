@@ -1,0 +1,4 @@
+google-adk
+google-cloud-aiplatform[reasoningengine,rag]
+vertexai
+toolbox-core
